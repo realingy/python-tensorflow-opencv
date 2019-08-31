@@ -1,6 +1,8 @@
 import cv2
 import matplotlib.pyplot as plt
 
+# 自适应直方图均衡（CLAHE）
+
 img = cv2.imread('timg.jpg',0) #直接读为灰度图像
 res = cv2.equalizeHist(img)
 

@@ -2,6 +2,8 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
+# 拉普拉斯滤波和sobel滤波
+
 img = cv.imread('dave.png', 0) #读取灰度图
 
 laplacian = cv.Laplacian(img,cv.CV_64F)  #拉普拉斯滤波
