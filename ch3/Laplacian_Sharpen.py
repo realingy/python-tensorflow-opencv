@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 
 # 读入原图像
-img = Image.open('lena.jpg')
+img = Image.open('/others/lenna.jpg')
 # img.show()
 
 # 为了减少计算的维度，因此将图像转为灰度图
@@ -38,4 +38,3 @@ img_laplace.show()
 
 img_laplace2 = Image.fromarray(np.uint8(laplace_img_arr))
 img_laplace2.show()
-
